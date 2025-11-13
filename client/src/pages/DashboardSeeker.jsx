@@ -74,10 +74,6 @@ export default function DashboardSeeker() {
                   </div>
                   <div className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-gray-100">
                     <div>
-                      <p className="text-xs text-gray-600 mb-1">Location</p>
-                      <p className="text-sm font-medium text-gray-900">{a.job?.location}</p>
-                    </div>
-                    <div>
                       <p className="text-xs text-gray-600 mb-1">Applied</p>
                       <p className="text-sm font-medium text-gray-900">{new Date(a.createdAt).toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
                     </div>
