@@ -34,28 +34,28 @@ export default function Register() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-slate-50 to-blue-50 flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-lg mb-4">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg mb-4 shadow-lg shadow-blue-500/50">
             <span className="text-white font-bold text-2xl">J</span>
           </div>
-          <h1 className="text-3xl font-bold text-gray-900">Join JobPortal</h1>
-          <p className="text-gray-600 mt-2">Create your account</p>
+          <h1 className="text-3xl font-bold text-white">Join JobPortal</h1>
+          <p className="text-gray-400 mt-2">Create your account</p>
         </div>
 
         {/* Error Message */}
         {error && (
-          <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-200">
-            <p className="text-sm text-red-800">{error}</p>
+          <div className="mb-6 p-4 rounded-lg bg-red-500/20 border border-red-500/50">
+            <p className="text-sm text-red-300">{error}</p>
           </div>
         )}
 
         {/* Form */}
         <form onSubmit={submit} className="card p-8 space-y-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
               Full Name
             </label>
             <input 
@@ -69,7 +69,7 @@ export default function Register() {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
               Email Address
             </label>
             <input 
@@ -84,7 +84,7 @@ export default function Register() {
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="password" className="block text-sm font-medium text-white mb-2">
               Password
             </label>
             <input 
@@ -99,7 +99,7 @@ export default function Register() {
           </div>
 
           <div>
-            <label htmlFor="role" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="role" className="block text-sm font-medium text-white mb-2">
               I am a
             </label>
             <select 
@@ -115,7 +115,7 @@ export default function Register() {
 
           {role === 'recruiter' && (
             <div>
-              <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
                 Company Name
               </label>
               <input 
@@ -138,9 +138,9 @@ export default function Register() {
 
         {/* Sign In Link */}
         <div className="mt-6 text-center">
-          <p className="text-gray-600">
+          <p className="text-gray-400">
             Already have an account? 
-            <Link to="/login" className="ml-2 font-semibold text-emerald-600 hover:text-emerald-700 transition-colors">
+            <Link to="/login" className="ml-2 font-semibold text-blue-400 hover:text-blue-300 transition-colors">
               Sign in
             </Link>
           </p>

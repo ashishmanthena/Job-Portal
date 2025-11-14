@@ -27,28 +27,28 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-slate-50 to-emerald-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg mb-4">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg mb-4 shadow-lg shadow-blue-500/50">
             <span className="text-white font-bold text-2xl">J</span>
           </div>
-          <h1 className="text-3xl font-bold text-gray-900">Welcome Back</h1>
-          <p className="text-gray-600 mt-2">Sign in to your account</p>
+          <h1 className="text-3xl font-bold text-white">Welcome Back</h1>
+          <p className="text-gray-400 mt-2">Sign in to your account</p>
         </div>
 
         {/* Error Message */}
         {error && (
-          <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-200">
-            <p className="text-sm text-red-800">{error}</p>
+          <div className="mb-6 p-4 rounded-lg bg-red-500/20 border border-red-500/50">
+            <p className="text-sm text-red-300">{error}</p>
           </div>
         )}
 
         {/* Form */}
         <form onSubmit={submit} className="card p-8 space-y-5">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
               Email Address
             </label>
             <input 
@@ -63,7 +63,7 @@ export default function Login() {
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="password" className="block text-sm font-medium text-white mb-2">
               Password
             </label>
             <input 
@@ -87,9 +87,9 @@ export default function Login() {
 
         {/* Sign Up Link */}
         <div className="mt-6 text-center">
-          <p className="text-gray-600">
+          <p className="text-gray-400">
             Don't have an account? 
-            <Link to="/register" className="ml-2 font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+            <Link to="/register" className="ml-2 font-semibold text-blue-400 hover:text-blue-300 transition-colors">
               Sign up now
             </Link>
           </p>
